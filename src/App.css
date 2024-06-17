@@ -1,38 +1,154 @@
-.App {
-  text-align: center;
+body {
+    font-family: "League Spartan", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-section {
+    display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cta {
+    width: 445px;
+    height: 245px;
+    margin: 40px 150px 0px 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cta h1 {
+    font-size: 56px;
+    font-weight: bold;
+    color: #512051;
 }
 
-.App-link {
-  color: #61dafb;
+.cta p {
+    font-size: 19px;
+    font-weight: 400;
+    color: #927B91;
+    margin-top: -15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ratings {
+    margin-top: 120px;
 }
+
+.ratings .star-rating {
+    position: relative;
+    width: 100px;
+    height: 20px;
+    background-image: url(./images/icon-star.svg);
+    background-repeat: repeat-x;
+    background-size: 20px auto;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.ratings .star-rating:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #333;
+}
+
+.ratings .star-rating:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% * (5 / rating));
+    background-color: #ffc107;
+}
+
+.reviews,
+.reportGuru,
+.bestTech {
+    display: flex;
+    align-items: center;
+    width: 445px;
+    height: 56px;
+    background-color: #F7F2F7;
+    border-radius: 15px;
+}
+
+.reviews p,
+.reportGuru p,
+.bestTech p {
+    font-size: 17px;
+    font-weight: bold;
+    color: #512051;
+}
+
+.reviews {
+    margin-bottom: 16px;
+}
+
+.reportGuru {
+    margin-left: 50px;
+    margin-bottom: 16px;
+}
+
+.bestTech {
+    margin-left: 100px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.testimonials img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.colton,
+.irene,
+.anne {
+    width: 350px;
+    height: 234px;
+    background-color: #512051;
+    border-radius: 15px;
+}
+
+.profile {
+    display: flex;
+    margin: 35px 0px 0px 30px;
+    align-items: center;
+}
+
+.profile div h4{
+    margin-bottom: -12px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.profile div p{
+    font-size: 17px;
+    color: #EE69A4;
+}
+
+.par {
+    margin: 15px 30px 0px 30px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.colton {
+    margin-right: 30px;
+}
+
+.irene {
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.anne {
+    margin-top: 40px;
+}
+
+
